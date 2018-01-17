@@ -1,2 +1,5 @@
-## Laravel Gentellela THEDOGZA (Laravel 5.5)
-
+## Laravel Gentellela Boilerplate (Laravel 5.5)
+### Installation
++ ``composer install``
++ ``npm install``
++ ``npm run dev``

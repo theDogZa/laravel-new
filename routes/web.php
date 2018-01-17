@@ -26,5 +26,10 @@ Route::group(['middleware'=>'auth'],function (){
     */
     Route::get('dashboard','HomeController@index')->name('dashboard');
 
-  Route::get('users', 'UsersController@index');
+    Route::get('users', 'UserController@index');
+
+    Route::get('admin/users/add', 'UserController@create');
+    Route::get('admin/users/{id}/edit', 'UserController@edit');
+    Route::get('admin/users/{id}/view', 'UserController@show');
+
 });

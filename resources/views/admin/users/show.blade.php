@@ -1,4 +1,4 @@
-@extends('backLayout.app')
+@extends('layouts.app')
 @section('title')
 User
 @stop
@@ -10,14 +10,14 @@ User
         <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
-                    <th>ID.</th> <th>Title</th><th>Body</th>
+                    <th>ID.</th> <th>Name</th><th>Username</th><th>Email</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>{{ $user->id }}</td> <td> {{ $user->title }} </td><td> {{ $user->body }} </td>
+                    <td>{{ $user->id }}</td> <td> {{ $user->name }} </td><td> {{ $user->username }} </td><td> {{ $user->email }} </td>
                 </tr>
-            </tbody>    
+            </tbody>
         </table>
     </div>
 
